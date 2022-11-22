@@ -1,0 +1,32 @@
+{
+    "items":[
+        {
+            "carpic":"/photos/carpic1.jpg",
+            "name":"mercedes Benz glc63 amg",
+            "price":"N80,000.00 / day",
+            "color":"Black",
+            "id":1
+        },
+        {
+            "carpic":"/photos/carpic2.jpg",
+            "name":"mercedes Benz gle63 amg",
+            "price":"70,000.00 / day",
+            "color":"Black",
+            "id":2
+        },
+        {
+            "carpic":"/photos/carpic4.jpg",
+            "name":"mercedes Benz gle63 amg",
+            "price":"N80,000.00 / day",
+            "color":"White",
+            "id":3
+        },
+        {
+            "carpic":"/photos/carpic1.jpg",
+            "name":"mercedes Benz glc63 amg",
+            "price":"70,000.00 / day",
+            "color":"Black",
+            "id":4
+        }
+    ]
+}

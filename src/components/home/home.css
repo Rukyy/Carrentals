@@ -1,0 +1,50 @@
+.welcome{
+    height: 80vh;
+    /* border: 2px solid black; */
+    /* background-image: url(https://images.unsplash.com/photo-1541443131876-44b03de101c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80); */
+    background-image: url(https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=983&q=80);
+    /* background-image: url(https://images.unsplash.com/photo-1592309905620-e5b59f6dcb98?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80); */
+    background-position: right;
+    background-size: cover;
+    color: aliceblue;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+}
+
+.welcome h4{
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    margin-left: 7%;
+    margin-bottom: 17%;
+    /* border: 1px dashed gold; */
+    padding: 1%;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5)
+    /* animation-delay: 2s; */
+}
+@-webkit-keyframes slidein{
+    0%{display: none;
+        -webkit-transform: scale(0);
+                transform: scale(0);}
+    100%{-webkit-transform: scale(2);transform: scale(2);}
+}
+@keyframes slidein{
+    0%{display: none;
+        -webkit-transform: scale(0);
+                transform: scale(0);}
+    100%{-webkit-transform: scale(1.6);transform: scale(1.6);}
+}

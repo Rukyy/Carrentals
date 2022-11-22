@@ -1,0 +1,32 @@
+.NavBar{
+    width: 100%;
+    position: fixed;
+}
+.NavBar ul{
+    display: flex ;
+    gap: 10%;
+    list-style-type: none;
+    font-size: 20px;
+    margin-bottom: 0px;
+    background-color: aliceblue;
+    /* background-color: rgb(15, 15, 102); */
+    /* background-image: linear-gradient( rgba(0, 0, 255,0.7), aliceblue); */
+    margin-top: 0;
+    height: 7vh;
+    align-items: center;
+    max-width: 100%;
+}
+.NavBar a{
+    color: black;
+    text-decoration: none;
+}
+.cartitems{
+    font-size: 12px;
+    /* background-color: red; */
+    /* border: 2px solid red; */
+    color: red;
+    /* border-radius:8px; */
+    /* padding: 1px; */
+    /* max-height: 20px; */
+    /* max-width: 20px; */
+}
