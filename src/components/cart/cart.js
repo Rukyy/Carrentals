@@ -1,19 +1,14 @@
+import { useState } from "react";
 import { useEffect } from "react";
+import useFetch from "../../usefetch";
 
-const Cart = () => {
-    useEffect(()=>{
-        fetch( `http://localhost:8000/items/${id}`)
-        .then((res)=>{return res.json()})
-        .then((data)=>{console.log(data)})
+const Cart = ({prop}) => {
 
-        fetch(`http://localhost:8001/user1`,{
-            method:"Post",
-            headers:{'content-Type':'application/json'}
-        })
-    })
+    // const {data,ispending,error}=useFetch(`http://localhost:800/users`)
+    console.log(data)
     return (  
         <div className="cartitems">
-
+            
         </div>
     );
 }

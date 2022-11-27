@@ -16,6 +16,7 @@ const NavBar = ({state}) => {
                 <li>Conatct</li>
                 {/* <li><Link to="/"><i className="fa-solid fa-cart-shopping"><sup className='cartitems'>{state}</sup></i>Cart</Link></li> */}
                 <li><a href="/"><i className="fa-solid fa-cart-shopping"><sup className='cartitems'>{state}</sup></i>Cart</a></li>
+                <li>Sign in/login  </li>
             </ul>
         </div>
      );
