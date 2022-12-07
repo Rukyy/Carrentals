@@ -1,4 +1,4 @@
-{ "homepage": "https://${GithubUsername}.github.io/${RepositoryName}",
+{ "homepage": "https://rukyy.github.io/carrentals",
   "name": "autoshop",
   "version": "0.1.0",
   "private": true,
