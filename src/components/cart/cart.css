@@ -1,3 +1,59 @@
-.cartitems{
-    display: none;
+@media screen and (min-width:300px) {
+    .cartitems{
+        margin-top: 4%;
+        padding-left: 3%;
+        cursor: pointer;
+    }
+    .list img{
+        width: 20%;
+        height: 220px;
+        border-radius: 10%;
+        /* object-fit: contain; */
+    }
+    .listitem{
+        padding: 1%;
+        margin-top: 1%;
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        background-color: gainsboro;
+        color:darkcyan;
+    }
+    .X{
+        border: 2px solid whitesmoke;
+        border-radius: 10%;
+    }
+    .dlbtn{
+        text-transform:uppercase;
+        outline: none;
+        background-color: gray;
+        color: whitesmoke;
+        border: 0px ;
+        border-radius: 8px;
+        padding: 0.6%;
+        
+    }
+    .checkbtn{
+        outline: none;
+        border: 0;
+        border-radius: 8px;
+        font-size: large;
+        color: white;
+        background-color: rgb(61, 185, 61);
+        cursor: pointer;
+    }
+    .checkbtn:hover{
+        background-color: rgba(0, 128, 0,1);
+    }
+    .checkout{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: x-large;
+    }
+    .notaddedmessage{
+        font-size: 35px;
+        color: gray;
+        text-align: center;
+        margin:0 auto;
+    }
 }

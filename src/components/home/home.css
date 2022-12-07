@@ -25,8 +25,8 @@
     padding: 1%;
     -webkit-animation-name: slidein;
             animation-name: slidein;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
     -webkit-animation-iteration-count: 1;

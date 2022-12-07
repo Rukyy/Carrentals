@@ -10,13 +10,7 @@ const AvailableCars = ({addsub}) => {
     const[error, seterror]=useState(null)
     const [check, setcheck]=useState('')
 
-    const [carname, setcarname]=useState(null)
-    const [carpic, setcarpic]=useState(null)
-    const [carprice, setcarprice]=useState(0.00)
-    const [color,setcolor]=useState(null)
-
     useEffect(()=>{
-
         fetch('http://localhost:8000/items')
         .then((res)=>{
             if (!res.ok){throw Error('Could not fetch Data')}
@@ -31,27 +25,39 @@ const AvailableCars = ({addsub}) => {
             setpending(false)
             seterror(err.message)
         })
-    },[])
+    },[]) 
     const [count, setcount]=useState(1)
     const additem=(Id)=>{
         setcount(count+1)
         addsub(count)
-        console.log(Id)
+        
         fetch(`http://localhost:8000/items/${Id}`)
         .then((res)=>{ return res.json()})
-        .then((result)=>{console.log( result.name)
-            setcarname(result.name)
-            setcarpic(result.carpic)
-            setcarprice(result.price)
-            setcolor(result.color)
-            const item={carname,carpic,carprice,color}
+        .then((result)=>{
+            let carname=result.name
+            let carpic=result.carpic
+            let carprice=result.price
+            let color=result.color
+            let year=result.YEAR
+            const item={carname,carpic,year,carprice,color}
             fetch(`http://localhost:800/users`,{
                 method:"POST",
                 headers:{"content-Type":"application/json"},
                 body:JSON.stringify(item)
-            })})
+                })
+        })
+
         
     }
+    // const addtocartdb=(item)=>{    
+    //     setTimeout(()=>{
+    //         console.log(item)
+
+    //         },2000)
+    //     }
+
+        
+
 
     return ( 
         <div className="AvailableCars">
@@ -60,7 +66,7 @@ const AvailableCars = ({addsub}) => {
                 {datta && datta.map((carinfo)=>(
                     <div className='item'>
                         <div className='picframe'style={{backgroundImage:`url(${carinfo.carpic})`}}><button onClick={()=>{additem(carinfo.id)}} className='addtocart'>Add to cart<i className="fa-solid fa-cart-shopping"></i></button> </div>
-                        <div>Name:<h4>{carinfo.name} </h4><br />Price: <h4>{carinfo.price}</h4><br />Color:<h4>{carinfo.color}</h4></div>
+                        <div>Name:<h4>{carinfo.name} </h4><br />Year:{carinfo.YEAR}<br />Color:<h4>{carinfo.color}</h4><br />Price:$<h4>{carinfo.price}</h4></div>
                         {/* {setcheck(carinfo.id)} */}
                     </div>
                 )

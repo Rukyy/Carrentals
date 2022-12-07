@@ -17,7 +17,6 @@ const Home = ({setstate}) => {
                 <h4>Welcome to Autoshop <br /> Rent the best of cars for your use. <br /> Luxury, power, luxury and power. </h4>
             </div>
             <AvailableCars addsub={setaddsub}/>
-            <Cart />
         </div>
 
 

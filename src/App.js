@@ -4,6 +4,7 @@ import './App.css';
 import Cart from './components/cart/cart';
 import Home from './components/home/home';
 import NavBar from './components/navbar/navbar';
+import CheckOut from './components/payment/checkout';
 
 function App() {
 
@@ -17,8 +18,11 @@ function App() {
             <Route exact path='/'>
               <Home setstate={setstate}/>
             </Route>
-            <Route exact path='/'>
+            <Route exact path='/cart'>
               <Cart prop={state}/>
+            </Route>
+            <Route exact path='/checkout'>
+              <CheckOut/>
             </Route>
           </Switch>
         </div>

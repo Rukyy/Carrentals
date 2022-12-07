@@ -1,25 +1,12 @@
 {
   "users": [
     {
-      "carname": "mercedes Benz glc63 amg",
-      "carpic": "/photos/carpic1.jpg",
-      "carprice": "70,000.00 / day",
-      "color": "Black",
-      "id": 1
-    },
-    {
       "carname": "mercedes Benz gle63 amg",
       "carpic": "/photos/carpic4.jpg",
-      "carprice": "N80,000.00 / day",
+      "year": 2018,
+      "carprice": 34000,
       "color": "White",
-      "id": 2
-    },
-    {
-      "carname": "mercedes Benz glc63 amg",
-      "carpic": "/photos/carpic1.jpg",
-      "carprice": "70,000.00 / day",
-      "color": "Black",
-      "id": 3
+      "id": 1
     }
   ]
 }
