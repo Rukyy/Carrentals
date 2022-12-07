@@ -39,8 +39,8 @@ img{
     height: 250px;
     background-color: rgb(231, 231, 249);
 }
-button{
-    width: 15%;
+.paybtn{
+    width: 55%;
     color: white;
     background-color: rgb(40, 223, 40);
     border: 0;

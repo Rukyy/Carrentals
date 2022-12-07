@@ -50,7 +50,7 @@ const CheckOut = () => {
                     {/* </div> */}
 
                 </form>
-                <button>Pay</button>
+                <button className="paybtn">Pay</button>
             </div>
         </div>
      );
