@@ -63,7 +63,7 @@ const AvailableCars = () => {
             <h1 className='available'>Available</h1> 
             <div className="items">
                 {datta && datta.map((carinfo)=>(
-                    <div className='item'>
+                    <div key={carinfo.id} className='item'>
                         <div className='picframe'style={{backgroundImage:`url(${carinfo.carpic})`}}><button onClick={()=>{additem(carinfo.id)}} className='addtocart'>Add to cart<i className="fa-solid fa-cart-shopping"></i></button> </div>
                         <div>Name:<h4>{carinfo.name} </h4><br />Year:{carinfo.YEAR}<br />Color:<h4>{carinfo.color}</h4><br />Price:$<h4>{carinfo.price}</h4></div>
                         {/* {setcheck(carinfo.id)} */}

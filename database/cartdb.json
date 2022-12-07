@@ -7,6 +7,14 @@
       "carprice": 36500,
       "color": "Black",
       "id": 5
+    },
+    {
+      "carname": "mercedes Benz glc63 amg",
+      "carpic": "/photos/carpic1.jpg",
+      "year": 2018,
+      "carprice": 36500,
+      "color": "Black",
+      "id": 6
     }
   ]
 }

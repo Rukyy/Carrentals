@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useFetch from "../../usefetch";
 import './cart.css'
 
 const Cart = () => {
-    const history=useHistory()
     const [totamount, settotamount]=useState('')
     let price=0
     const {data,ispending,error}=useFetch(`http://localhost:800/users`)
@@ -32,7 +31,7 @@ const Cart = () => {
         <div className="cartitems">
             {error && error}
             {data && data.map((item)=>(
-                <div className="list">
+                <div key={item.id} className="list">
                     <div className="listitem"><img src={item.carpic} alt="" />
                         <div className="des">
                             <span><h1>{item.color} {item.year} {item.carname} </h1></span>
