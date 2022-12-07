@@ -8,18 +8,17 @@ import CheckOut from './components/payment/checkout';
 
 function App() {
 
-  const [state, setstate]=useState(0)
   return (
     <Router>
       <div className="App">
-        <NavBar state={state}/>
+        <NavBar />
         <div className="content">
           <Switch>
             <Route exact path='/'>
-              <Home setstate={setstate}/>
+              <Home />
             </Route>
             <Route exact path='/cart'>
-              <Cart prop={state}/>
+              <Cart />
             </Route>
             <Route exact path='/checkout'>
               <CheckOut/>

@@ -4,7 +4,7 @@ import { Link, useHistory } from "react-router-dom";
 import useFetch from "../../usefetch";
 import './cart.css'
 
-const Cart = ({prop}) => {
+const Cart = () => {
     const history=useHistory()
     const [totamount, settotamount]=useState('')
     let price=0
@@ -17,12 +17,13 @@ const Cart = ({prop}) => {
     }
     // useEffect(()=>{ 
         setTimeout(() => {
-            for (let i=0;i<data.length;i++){
-                price=price+data[`${i}`].carprice
-                // console.log(price)
-                settotamount(price)
+            if(data!=null){
+                for (let i=0;i<data.length;i++){
+                    price=price+data[`${i}`].carprice
+                    // console.log(price)
+                    settotamount(price)
 
-            }
+            }}
         }, 100);
     // },[data])
 

@@ -5,7 +5,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import useFetch from '../../usefetch';
 import { useState } from 'react';
-const NavBar = ({state}) => {
+const NavBar = () => {
     const [itemsincart, setitemsincart]=useState(0)
         fetch('http://localhost:800/users')
         .then((res)=>{return res.json()})

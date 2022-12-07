@@ -3,7 +3,7 @@ import './available.css'
 import NavBar from '../navbar/navbar'
 import useFetch from '../../usefetch'
 
-const AvailableCars = ({addsub}) => {
+const AvailableCars = () => {
     const addtocart=useRef(null)
     const[datta, setdatta]=useState(null)
     const[pending,setpending]=useState(true)
@@ -29,7 +29,6 @@ const AvailableCars = ({addsub}) => {
     const [count, setcount]=useState(1)
     const additem=(Id)=>{
         setcount(count+1)
-        addsub(count)
         
         fetch(`http://localhost:8000/items/${Id}`)
         .then((res)=>{ return res.json()})
